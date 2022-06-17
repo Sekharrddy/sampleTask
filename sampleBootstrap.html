@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .REGISTRATION {
+            background-color: #3762D3;
+            line-height: 40px;
+            text-align: center;
+            margin: 0px -12px 0px -12px;
+            color: #fff;
+        }
+
+        .img {
+            position: relative;
+            top: 35px;
+            left: 168px;
+        }
+
+        .input1 {
+            height: 23px;
+            width: 221px;
+
+        }
+
+        ::placeholder {
+            color: white;
+            opacity: 1;
+        }
+
+        .address {
+            position: relative;
+            top: 24px;
+            height: 66px;
+        }
+
+        .pin {
+            position: relative;
+            left: 225px;
+        }
+
+        .table {
+            position: relative;
+            top: 35px;
+            left: 96px;
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+
+        .container {
+            background-color: #D8DDF0;
+
+        }
+
+        .tr {
+            background-color: white;
+        }
+
+        .button {
+            position: relative;
+            left: 38pc;
+            margin-top: 15px;
+            background: #EA625B;
+            border-radius: 6px;
+            width: 83px;
+        }
+
+        .rounded-lg {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="my-3 mx-3">
+        <div class="container">
+            <h6 class="REGISTRATION">DOCTORS REGISTRATION FORM</h6>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="./blank-profile-picture-973460_640.webp" width="100" height="100" class="img" />
+                    <div>
+
+                        <form class="form mt-5 ml-4">
+                            <p>
+                            <h6 class="text-primary">PERSONAL DETAILS</h6>
+                            </p>
+                            <input type="text" placeholder="Full Name" class="bg-primary input1 rounded-lg" />
+                            <input type="text" placeholder="Last Name" class="bg-primary input1 rounded-lg" /><br />
+                            <input type="datetime-local" placeholder="Date of Birth"
+                                class="bg-primary input1 rounded-lg mt-2" />
+                        </form>
+                    </div>
+                    <div>
+
+                        <h6 class="text-primary mt-2">PROFESSIONAL DETAILS</h6>
+
+                        <form>
+                            <input type="text" placeholder="specility" class="rounded-lg bg-primary input1" />
+                            <input type="number" placeholder="Year of Experience"
+                                class="rounded-lg bg-primary input1" />
+                        </form>
+                    </div>
+                    <div>
+
+                        <h6 class="text-primary mt-2">CONTACT DETAILS</h6>
+
+                        <form class="mt-2">
+                            <input type=" number" placeholder="phone" class='bg-primary rounded-lg input1'>
+                            <input type=" text" placeholder="Address"
+                                class='bg-primary rounded-lg input1 address '><br />
+                            <input type=" number" placeholder="phone" class='bg-primary rounded-lg input1 mb-2'><br />
+                            <input type=" email" placeholder="Email" class='bg-primary rounded-lg input1'>
+                            <input type=" text" placeholder="City" class='bg-primary rounded-lg input1 mb-2'>
+                            <input type="number" placeholder="PIN CODE"
+                                class="bg-primary rounded-lg input1 pin mb-2" /><br />
+                            <input type="text" placeholder="state" class="bg-primary rounded-lg input1 pin" />
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <table class="table">
+                        <tr>
+                            <th class="text-white bg-primary">Periadic avaliability</th>
+                            <th class="text-primary"> Specific avaliability</th>
+                            <th class="text-primary"> unavaliability</th>
+                        </tr>
+                        <tr class="tr rounded-lg">
+                            <td class="text-primary">sunday</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                        </tr>
+                        <tr class="tr rounded-lg">
+                            <td class="text-primary">Monday</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                        </tr>
+                        <tr class="tr rounded-lg">
+                            <td class="text-primary">TUESDAY</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                        </tr>
+                        <tr class="tr rounded-lg">
+                            <td class="text-primary">WEDNESDAY</td>
+                            <td class="text-primary"><input type="time" class="bg-primary  mx-4"> TO </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                        </tr>
+                        <tr class="tr rounded-lg">
+                            <td class="text-primary">THURSDAY</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                        </tr>
+                        <tr class="tr rounded-lg">
+                            <td class="text-primary">FRIDAY</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                        </tr>
+                        <tr class="tr rounded-lg">
+                            <td class="text-primary">SATURDAY</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" /> TO </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <p>
+            <button class="button" onclick="openForm()">SAVE</button>
+        </p>
+    </div>
+
+    <script>
+        function openForm() {
+            alert(' Your form is sumbmited')
+}
+    </script>
+</body>
+
+</html>
