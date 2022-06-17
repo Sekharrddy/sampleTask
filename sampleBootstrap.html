@@ -34,6 +34,7 @@
         ::placeholder {
             color: white;
             opacity: 1;
+            font: normal normal normal 20px/24px Helvetica Neue;
         }
 
         .address {
@@ -75,6 +76,17 @@
 
         .rounded-lg {
             border-radius: 8px;
+            background-color: #E5E8F1;
+        }
+        .thead{
+            box-shadow: 1px 2px 0px 0px blue;
+            cursor: pointer;
+        }
+        .personal{
+            font-family:  Helvetica Neue;     
+        }
+        span{
+            color: #EB6460;
         }
     </style>
 </head>
@@ -93,83 +105,83 @@
 
                         <form class="form mt-5 ml-4">
                             <p>
-                            <h6 class="text-primary">PERSONAL DETAILS</h6>
+                            <h6 class="text-primary personal">PERSONAL DETAILS</h6>
                             </p>
-                            <input type="text" placeholder="Full Name" class="bg-primary input1 rounded-lg" />
-                            <input type="text" placeholder="Last Name" class="bg-primary input1 rounded-lg" /><br />
-                            <input type="datetime-local" placeholder="Date of Birth"
+                            <input type="text" placeholder=" Full Name" class="bg-primary input1 rounded-lg" />
+                            <input type="text" placeholder=" Last Name" class="bg-primary input1 rounded-lg" /><br />
+                            <input type="datetime-local" placeholder=" Date of Birth"
                                 class="bg-primary input1 rounded-lg mt-2" />
                         </form>
                     </div>
                     <div>
 
-                        <h6 class="text-primary mt-2">PROFESSIONAL DETAILS</h6>
+                        <h6 class="text-primary mt-2 personal">PROFESSIONAL DETAILS</h6>
 
                         <form>
-                            <input type="text" placeholder="specility" class="rounded-lg bg-primary input1" />
-                            <input type="number" placeholder="Year of Experience"
+                            <input type="text" placeholder=" specility" class="rounded-lg bg-primary input1" />
+                            <input type="number" placeholder=" Year of Experience"
                                 class="rounded-lg bg-primary input1" />
                         </form>
                     </div>
                     <div>
 
-                        <h6 class="text-primary mt-2">CONTACT DETAILS</h6>
+                        <h6 class="text-primary mt-2 personal">CONTACT DETAILS</h6>
 
                         <form class="mt-2">
-                            <input type=" number" placeholder="phone" class='bg-primary rounded-lg input1'>
-                            <input type=" text" placeholder="Address"
+                            <input type=" number" placeholder=" phone" class='bg-primary rounded-lg input1'>
+                            <input type=" text" placeholder=" Address"
                                 class='bg-primary rounded-lg input1 address '><br />
-                            <input type=" number" placeholder="phone" class='bg-primary rounded-lg input1 mb-2'><br />
-                            <input type=" email" placeholder="Email" class='bg-primary rounded-lg input1'>
-                            <input type=" text" placeholder="City" class='bg-primary rounded-lg input1 mb-2'>
-                            <input type="number" placeholder="PIN CODE"
+                            <input type=" number" placeholder=" phone" class='bg-primary rounded-lg input1 mb-2'><br />
+                            <input type=" email" placeholder=" Email" class='bg-primary rounded-lg input1'>
+                            <input type=" text" placeholder=" City" class='bg-primary rounded-lg input1 mb-2'>
+                            <input type="number" placeholder=" Pin Code"
                                 class="bg-primary rounded-lg input1 pin mb-2" /><br />
-                            <input type="text" placeholder="state" class="bg-primary rounded-lg input1 pin" />
+                            <input type="text" placeholder=" state" class="bg-primary rounded-lg input1 pin" />
 
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <table class="table">
-                        <tr>
-                            <th class="text-white bg-primary">Periadic avaliability</th>
-                            <th class="text-primary"> Specific avaliability</th>
-                            <th class="text-primary"> unavaliability</th>
+                        <tr class="thead">
+                            <th class="text-white personal" onclick="fnclick()" ondblclick="myFunction()" id="demo">Periadic avaliability</th>
+                            <th class="text-white personal" onclick="fnclick1()" ondblclick="myFunction1()" id="demo1"> Specific avaliability</th>
+                            <th class="text-white personal" onclick="fnclick2()" ondblclick="myFunction2()" id="demo2"> unavaliability</th>
                         </tr>
                         <tr class="tr rounded-lg">
-                            <td class="text-primary">sunday</td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                            <td class="text-primary">SUNDAY</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time" onchange="tConvert()"> <span>TO</span> </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time" onchange="tConvert()"></td>
                         </tr>
                         <tr class="tr rounded-lg">
-                            <td class="text-primary">Monday</td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                            <td class="text-primary">MONDAY</td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"> <span>TO</span> </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"></td>
                         </tr>
                         <tr class="tr rounded-lg">
                             <td class="text-primary">TUESDAY</td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"> <span>TO</span> </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"></td>
                         </tr>
                         <tr class="tr rounded-lg">
                             <td class="text-primary">WEDNESDAY</td>
-                            <td class="text-primary"><input type="time" class="bg-primary  mx-4"> TO </td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                            <td class="text-primary"><input type="time" class="bg-primary  mx-4" id="time"> <span>TO</span> </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"></td>
                         </tr>
                         <tr class="tr rounded-lg">
                             <td class="text-primary">THURSDAY</td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"> <span>TO</span> </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"></td>
                         </tr>
                         <tr class="tr rounded-lg">
                             <td class="text-primary">FRIDAY</td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"> TO </td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"> <span>TO</span> </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"></td>
                         </tr>
                         <tr class="tr rounded-lg">
                             <td class="text-primary">SATURDAY</td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4" /> TO </td>
-                            <td class="text-primary"><input type="time" class="bg-primary mx-4"></td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"/> <span>TO</span> </td>
+                            <td class="text-primary"><input type="time" class="bg-primary mx-4" id="time"></td>
                         </tr>
 
                     </table>
@@ -186,6 +198,28 @@
         function openForm() {
             alert(' Your form is sumbmited')
 }
+function fnclick(){
+    document.getElementById("demo").style.backgroundColor='blue'
+}
+function fnclick1(){
+    document.getElementById("demo1").style.backgroundColor='blue'
+}
+function fnclick2(){
+    document.getElementById("demo2").style.backgroundColor='blue'
+}
+function myFunction(){
+    document.getElementById("demo").style.backgroundColor=''
+}
+function myFunction1(){
+    document.getElementById("demo1").style.backgroundColor=''
+}
+function myFunction2(){
+    document.getElementById("demo2").style.backgroundColor=''
+}
+
+
+
+
     </script>
 </body>
 
